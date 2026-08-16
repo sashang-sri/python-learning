@@ -1,0 +1,115 @@
+#game recomentations
+print('--------------------------------------------------------------------------------------------------------------------------------------\n')
+print('GAME RECOMENTATION 🎲')
+def main():
+     
+    difficulty=input('difficulty, medium or casual\n\t')
+    if not (difficulty == 'difficulty' or difficulty == 'medium' or difficulty == 'casual'):
+        print('enter a valid difficulty')
+        return
+    
+    players=input('multiplayer, two player or single\n\t')
+    if not (players == 'multiplayer' or players == 'two player' or players == 'single'):
+         print('enter a valid player')
+         return
+    
+    if difficulty=='difficulty':
+        if players=='multiplayer':
+            recommend('PUBG🔫')
+            print('difficulty level: ⭐️⭐️⭐️')
+        elif players=='two player':
+             recommed('CHESS')
+             print('difficulty level: ⭐️⭐️⭐️')
+        elif players=='single':
+            recommend('CANDY CRUSH🍬')
+            print('difficulty level: ⭐️⭐️⭐️')
+        
+    
+    elif difficulty=='medium':
+        if players=='multiplayer':
+            recommend('MINI MILTIA🪖')
+            print('difficulty level: ⭐️⭐️️')
+        elif players=='two player':
+             recommend('CARROM🥏')
+             print('difficulty level: ⭐️⭐️')
+        elif players=='single':
+            recommend('SHADOW FIGHT🥷🏻')
+            print('difficulty level: ⭐️⭐️')
+      
+            
+    elif difficulty=='casual':
+        if players =='multiplayer':
+            recommend('LUDO🎁')
+            print('difficulty level: ⭐️️')
+        elif players=='two player':
+             recommend('XO❌🅾️')
+             print('difficulty level: ⭐️️')
+        elif players=='single':
+            recommend('SUDOKU🧮')
+            print('difficulty level: ⭐️')
+    
+
+            
+def recommend(game):
+    print('YOU MIGHT LIKE:', game)
+main()
+
+
+#game recomentations in complex boolean way
+print('-----------------------------------------------------------------------------------------------------------------------------------\n')
+print('GAME RECOMENTATION 🎲 IN COMPLEX BOOLEAN WAY')
+
+def main1():
+
+     #get the input here
+    difficulty=input('difficulty, medium or casual\n\t')
+    players=input('multiplayers, two players or single\n\t')
+
+#give the function here with boolean (and)
+    if (difficulty=='difficulty' and players=='multiplayers'):
+        recommended('PUBG🔫')
+        print('difficulty level: ⭐️⭐️⭐️')
+
+    elif (difficulty=='difficulty' and players=='two players'):
+        recommeded('CHESS♟️')
+        print('difficulty level: ⭐️⭐️⭐️')
+
+    elif (difficulty=='difficulty' and players=='single'):
+        recommended('CANDY CRUSH🍬')
+        print('difficulty level: ⭐️⭐️⭐️')
+        
+    elif (difficulty=='medium' and players=='multiplayers'):
+        recommended('MINI MILTIA🪖')
+        print('difficulty level: ⭐️⭐️️')
+
+    elif (difficulty=='medium' and players=='two players'):
+         recommended('CARROM🥏')
+         print('difficulty level: ⭐️⭐️')
+
+    elif (difficulty=='medium' and players=='single'):
+        recommended('SUDOKU🧮')
+        print('difficulty level: ⭐⭐️️')
+
+    elif (difficulty=='casual' and players=='multiplayers'):
+        recommended('LUDO🎁')
+        print('difficulty level: ⭐️️')
+    
+    elif (difficulty=='casual' and players=='two players'):
+        recommended('XO❌🅾️')
+        print('difficulty level: ⭐️️')
+        
+    elif (difficulty =='casual' and players =='single'):
+       recommended('SHADOW FIGHT 🥷')
+       print('difficulty level: ⭐️')
+    
+    else:
+       print('ENTER A VALID COMBINATION')
+
+def recommended(game):
+    print('YOU MIGHT LIKE:', game)
+main()
+
+                  
+
+
+
